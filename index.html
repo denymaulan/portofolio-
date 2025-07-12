@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Card</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #1a1a1a;
+      color: white;
+      border-radius: 15px;
+      width: 300px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 15px #00ff00;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00;
+    }
+
+    .date {
+      background: black;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #00ff00;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="date">JUNE<br><strong>29</strong></div>
+    <h2>Card Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facere illo nam repudiandae tempore...</p>
+    <a href="#">SEE MORE</a>
+  </div>
+
+</body>
+</html>
