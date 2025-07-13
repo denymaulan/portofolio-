@@ -1,82 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neon Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk - Triya Jati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0f0f0f;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
     }
 
-    .card {
-      background: #1a1a1a;
-      color: white;
-      border-radius: 15px;
-      width: 300px;
-      padding: 20px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 0 15px #00ff00;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00;
+    .trust {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .date {
-      background: black;
-      padding: 5px 10px;
-      display: inline-block;
-      border-radius: 5px;
+    .trust img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .trust h3 {
+      color: #00cfff;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .trust p {
+      color: #99dfff;
       font-size: 14px;
+    }
+
+    .produk-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      margin-bottom: 30px;
+    }
+
+    .deskripsi h2 {
+      font-size: 24px;
       margin-bottom: 10px;
+      color: #00cfff;
     }
 
-    .card h2 {
-      margin: 10px 0;
+    .deskripsi p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
-    .card p {
-      font-size: 14px;
-      color: #ccc;
+    .fitur {
+      list-style: none;
+      padding-left: 0;
     }
 
-    .card a {
+    .fitur li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .fitur li::before {
+      content: '✔️';
+      position: absolute;
+      left: 0;
+      color: #00cfff;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta a {
       display: inline-block;
-      margin-top: 15px;
+      background: linear-gradient(to right, #00cfff, #33e6ff);
+      color: black;
+      padding: 12px 25px;
+      border-radius: 10px;
       text-decoration: none;
-      color: #00ff00;
-      font-weight: bold;
+      font-weight: 600;
+      margin: 10px;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #33e6ff;
+    }
+
+    .sosmed {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .sosmed a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #00cfff;
+      text-decoration: none;
+    }
+
+    .sosmed a:hover {
+      color: #33e6ff;
     }
   </style>
 </head>
 <body>
-  <a href="galeri.html">← Kembali</a>
-
-  <div class="produk-detail">
-    <img src="images/image_1.png" alt="Kursi Jati ÈLangit" class="gambar-utama" />
+  <div class="container">
     
-    <h1>Kursi Jati ÈLangit</h1>
-    <p><strong>Bahan:</strong> Kayu Jati Asli</p>
-    <p><strong>Ukuran:</strong> 120x60x90 cm</p>
-    <p><strong>Deskripsi:</strong> Kursi dengan ukiran khas Jepara, elegan dan kuat. Cocok untuk ruang tamu klasik.</p>
+    <div class="trust">
+      <img src="images/logo_kualitas.png" alt="Kualitas Jati Asli" />
+      <h3>TRIYA JATI dipercaya sejak 1990</h3>
+      <p>Dipilih ribuan pelanggan dari berbagai kota di Indonesia</p>
+    </div>
 
-    <a class="btn-pesan" href="https://wa.me/6285866338431?text=Halo%20saya%20ingin%20memesan%20kursi%20Jati%20ÈLangit" target="_blank">Pesan Sekarang</a>
+    <img src="images/image_1.png" alt="Kursi Jati ÈLangit" class="produk-image" />
 
-    <a class="btn-maps" href="https://maps.app.goo.gl/9aWnuSAU8YUA9Fg4A" target="_blank">Lihat Lokasi</a>
+    <section class="deskripsi">
+      <h2>Kursi Jati ÈLangit</h2>
+      <p>Kursi tamu elegan dengan ukiran khas Jepara yang dibuat langsung oleh pengrajin profesional. Tersedia dalam berbagai pilihan warna finishing natural.</p>
+      <ul class="fitur">
+        <li>Kayu Jati TPK Legal</li>
+        <li>Ukiran tangan langsung dari pengrajin</li>
+        <li>Kuat & tahan lama hingga 10+ tahun</li>
+        <li>Finishing natural yang mewah</li>
+      </ul>
+    </section>
+
+    <div class="cta">
+      <a href="https://wa.me/6285866338431?text=Halo%20saya%20tertarik%20dengan%20produk%20Triya%20Jati" target="_blank">Pesan Sekarang</a>
+      <a href="https://maps.app.goo.gl/9aWnuSAU8YUA9Fg4A" target="_blank">Lihat Lokasi</a>
+    </div>
 
     <div class="sosmed">
       <a href="https://www.instagram.com/triajati223" target="_blank">📸</a>
       <a href="https://www.facebook.com/profile.php?id=100090730987580" target="_blank">📘</a>
     </div>
+
   </div>
 </body>
 </html>
